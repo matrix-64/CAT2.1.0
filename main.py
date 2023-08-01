@@ -6,6 +6,7 @@ import numpy as np
 import cv2
 import mediapipe as mp
 import pyautogui as pg
+import time
 print("done")
 print("waking mmcat up...",end = '')
 from mmcat import mouseModeCAT
@@ -214,3 +215,7 @@ while cap.isOpened():
         break
 
 cap.release()
+del(cat)
+
+
+time.sleep(2)
